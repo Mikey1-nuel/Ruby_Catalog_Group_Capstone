@@ -1,5 +1,6 @@
 class App
   attr_accessor :books, :albums, :games
+
   def initialize
     @books = []
     @albums = []
@@ -8,13 +9,16 @@ class App
     @authors = []
     @genres = []
   end
+
   def save_and_exit
     puts 'Thank you for using this app. Goodbye!'
     exit
   end
+
   def invalid_option
     puts 'Invalid option'
   end
+
   def options
     puts 'Please choose an option from the following: '
     puts '1 - List all books'

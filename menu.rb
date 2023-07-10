@@ -3,6 +3,7 @@ def menu(app)
   print 'Prompt > '
   gets.chomp.to_i
 end
+
 def manage_selection(app, option)
   tasks = {
     1 => :list_books,
@@ -20,6 +21,7 @@ def manage_selection(app, option)
   selection = tasks[option] || tasks[:default]
   app.send(selection)
 end
+
 def home(app)
   puts '------------------------------'
   puts 'Welcome to Catalog of my things!'
