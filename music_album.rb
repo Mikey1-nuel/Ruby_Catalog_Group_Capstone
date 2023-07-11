@@ -9,4 +9,8 @@ class MusicAlbum < Item
     @artist = artist
     @label = label
   end
+
+  def can_be_archived?
+    super && on_spotify?
+  end
 end
