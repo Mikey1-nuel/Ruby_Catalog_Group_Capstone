@@ -7,6 +7,7 @@ class MusicAlbum < Item
     super(release_date)
     @title = title
     @artist = artist
+    @release_date = release_date
     @label = label
     @on_spotify = false
   end
