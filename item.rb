@@ -37,3 +37,4 @@ class Item
     @publish_date < cutoff_date
   end
 end
+end
