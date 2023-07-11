@@ -21,7 +21,7 @@ def load_books_json
   end
 end
 
-def save_book
+def save_books_json
   books_arr = []
 
   @books.each do |book|
@@ -34,7 +34,7 @@ def save_book
   File.write('data/books.json', JSON.pretty_generate(books_arr))
 end
 
-def save_label
+def save_labels_json
   labels_arr = []
 
   @labels.each do |label|
@@ -45,7 +45,7 @@ def save_label
   File.write('data/labels.json', JSON.pretty_generate(labels_arr))
 end
 
-def add_book # rubocop:disable Metrics/MethodLength
+def add_book
   puts 'What is the title of the book?'
   title = gets.chomp
 
@@ -74,8 +74,8 @@ def add_book # rubocop:disable Metrics/MethodLength
 
   book.move_to_archive
 
-  save_book
-  save_label
+  save_books_json
+  save_labels_json
 
   puts 'Book created successfully!'
 end
