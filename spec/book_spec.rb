@@ -1,6 +1,6 @@
 require_relative '../book'
 
-RSpec.describe Book do
+describe Book do
   let(:publisher) { 'Publisher 1' }
   let(:cover_state) { 'good' }
   let(:publish_date) { '2021-01-01' }
