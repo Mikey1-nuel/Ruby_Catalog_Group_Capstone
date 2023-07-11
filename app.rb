@@ -1,7 +1,9 @@
 require_relative 'book_interface'
+require_relative 'music_album_interface'
+require_relative 'genre_interface'
 
 class App
-  attr_accessor :books, :albums, :games
+  attr_accessor :books, :albums, :games, :genres
 
   def initialize
     @books = []
@@ -14,9 +16,14 @@ class App
 
   def fetch_files
     load_books_json
+    load_music_albums_json
+    load_genres_json
   end
 
   def save_and_exit
+    save_books_json
+    save_music_albums_json
+    save_genres_json
     puts 'Thank you for using this app. Goodbye!'
     exit
   end
@@ -36,6 +43,8 @@ class App
     puts '7 - Add a book'
     puts '8 - Add a music album'
     puts '9 - Add a game'
-    puts '10 - Exit'
+    puts '10 - Add a genre'
+    puts '11 - Exit'
   end
 end
+
