@@ -47,4 +47,3 @@ class App
     puts '11 - Exit'
   end
 end
-
