@@ -5,15 +5,6 @@ RSpec.describe MusicAlbum do
   let(:album) { MusicAlbum.new('Title', 'Artist', release_date, 'Label') }
 
   describe '#can_be_archived?' do
-    # context 'when on_spotify is true and can_be_archived? from the parent class returns true' do
-    #   it 'returns true' do
-    #     album.on_spotify = true
-    #     allow(album).to receive(:super_can_be_archived?).and_return(true)
-
-    #     expect(album.can_be_archived?).to eq(true)
-    #   end
-    # end
-
     context 'when on_spotify is false' do
       it 'returns false' do
         album.on_spotify = false
