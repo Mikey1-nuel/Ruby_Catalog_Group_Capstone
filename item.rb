@@ -1,7 +1,7 @@
 require 'date'
 class Item
-  attr_reader :id, :archived
-  attr_accessor :publish_date
+  attr_reader :id, :archived, :genre, :author, :source
+  attr_accessor :publish_date, :label
 
   def initialize(publish_date, archived: false)
     @id = Random.rand(1..1000)
@@ -9,13 +9,15 @@ class Item
     @archived = archived
   end
 
+  def add_label(label)
+    @label = label
+  end
+
   def move_to_archive()
     return unless can_be_archived?
 
     @archived = true
   end
-
-  # private
 
   def can_be_archived?()
     current_date = Date.today

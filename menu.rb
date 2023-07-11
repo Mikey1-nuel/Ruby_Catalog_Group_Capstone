@@ -18,6 +18,7 @@ def manage_selection(app, option)
     10 => :save_and_exit,
     default: :invalid_option
   }
+
   selection = tasks[option] || tasks[:default]
   app.send(selection)
 end
@@ -26,6 +27,7 @@ def home(app)
   puts '------------------------------'
   puts 'Welcome to Catalog of my things!'
   puts '------------------------------'
+
   loop do
     option = menu(app)
     manage_selection(app, option)
