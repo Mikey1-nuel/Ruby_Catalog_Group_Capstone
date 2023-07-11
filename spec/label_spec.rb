@@ -1,7 +1,7 @@
 require_relative '../book'
 require_relative '../label'
 
-describe Label do
+RSpec.describe Label do
   it('should create a Label') do
     label = Label.new('My Book', 'Red')
     expect(label.color).to eq('Red')
