@@ -1,3 +1,5 @@
+require_relative 'book_interface'
+
 class App
   attr_accessor :books, :albums, :games
 
@@ -8,6 +10,10 @@ class App
     @labels = []
     @authors = []
     @genres = []
+  end
+
+  def fetch_files
+    load_books_json
   end
 
   def save_and_exit

@@ -1,7 +1,7 @@
 require 'date'
 require_relative '../item'
 
-RSpec.describe Item do
+describe Item do
   describe '#can_be_archived?' do
     it 'returns true for items older than 10 years' do
       publish_date = Date.today - (11 * 365)
