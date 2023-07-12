@@ -14,15 +14,20 @@ def load_authors_json
     author = @authors.find { |a| a.name == item['author'] }
     next if author.nil?
 
-    case item['type']
-    when 'book'
-      author.add_item(Book.new(item['publisher'], item['cover_state'], Date.parse(item['publish_date'])))
-    when 'music_album'
-      author.add_item(MusicAlbum.new(item['title'], item['artist'], Date.parse(item['release_date']), item['label']))
-    when 'game'
-      author.add_item(Game.new(item['title'], item['platform'], Date.parse(item['last_played_at']),
-                               Date.parse(item['publish_date'])))
-    end
+    create_item(author, item_data)
+  end
+end
+
+def create_item(author, item_data)
+  case item_data['type']
+  when 'book'
+    author.add_item(Book.new(item_data['publisher'], item_data['cover_state'], Date.parse(item_data['publish_date'])))
+  when 'music_album'
+    author.add_item(MusicAlbum.new(item_data['title'], item_data['artist'], Date.parse(item_data['release_date']),
+                                   item_data['label']))
+  when 'game'
+    author.add_item(Game.new(item_data['title'], item_data['platform'], Date.parse(item_data['last_played_at']),
+                             Date.parse(item_data['publish_date'])))
   end
 end
 
