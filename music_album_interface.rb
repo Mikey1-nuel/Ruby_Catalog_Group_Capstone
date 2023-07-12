@@ -45,7 +45,7 @@ def add_music_album
   puts 'What is the release date of the music album? (YYYY-MM-DD)'
   release_date = gets.chomp
 
-  puts 'What record label does the music album belong?'
+  puts 'What record label does the music album belong to?'
   label = gets.chomp
 
   album = MusicAlbum.new(title, artist, Date.parse(release_date), label)
