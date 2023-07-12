@@ -35,10 +35,6 @@ class App
     exit
   end
 
-  # def invalid_option
-  #   puts 'Invalid option'
-  # end
-
   def options
     puts 'Please choose an option from the following: '
     puts '1 - List all books'
@@ -60,49 +56,6 @@ class App
     print 'Prompt > '
     gets.chomp.to_i
   end
-
-  # def manage_selection(option)
-  #   case option
-  #   when 1
-  #     list_books
-  #   when 2
-  #     list_music_albums
-  #   when 3
-  #     list_games
-  #   when 4
-  #     list_genres
-  #   when 5
-  #     list_labels
-  #   when 6
-  #     list_authors
-  #   else
-  #     invalid_option
-  #   end
-  # end
-
-  #   def manage_selection2(option)
-  #   case option
-  #   when 7
-  #     add_book
-  #   when 8
-  #     add_music_album
-  #   when 9
-  #     add_game
-  #   when 10
-  #     add_genre
-  #   when 11
-  #     add_author
-  #   when 12
-  #     save_and_exit
-  #   else
-  #     invalid_option
-  #   end
-  # end
-
-  # def selection(option)
-  #   manage_selection(option)
-  #   manage_selection2(option)
-  # end
 
   def manage_selection(option)
     case option
@@ -175,7 +128,6 @@ def main
   app.fetch_files
 
   app.home
-  # selection(option)
 end
 
 main
