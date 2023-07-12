@@ -187,18 +187,22 @@ This project is deployed at Render.com you can clone it here. [git@github.com:to
 
 ## Authors
 
+👤 **Isabella Otoo**
+- GitHub: [@githubhandle](https://github.com/Bellagirl-maker)
+- Twitter: [@twitterhandle](https://twitter.com/isabella_otoo)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/isabella-otoo)
+
+👤 **Mikey1-nuel**
+
+- GitHub: [Githubhandle](https://github.com/Mikey1-nuel)
+- Twitter: [Twitterhandle](https://twitter.com/Mikey_nuel)
+- LinkedIn: [LinkedInhandle](https://www.linkedin.com/in/emmanuel-nwoye-5915141b8/)
+
 👤 **Tom Daniel**
 
 - GitHub: [@tomdan-ai](https://github.com/tomdan-ai)
 - Twitter: [@TomUdoh1](https://twitter.com/TomUdoh1)
 - LinkedIn: [tomdaniel](https://www.linkedin.com/in/tomudoh)
-
-
-👤 **Captain Bawa**
-
-- GitHub: [@CaptainBawa](https://github.com/CaptainBawa)
-- Twitter: [@BawaCollins](https://twitter.com/BawaCollins)
-- LinkedIn: [collinsbawa](https://www.linkedin.com/in/captainbawa/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
