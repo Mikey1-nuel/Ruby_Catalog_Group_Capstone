@@ -255,6 +255,6 @@ We would like to thank the Microverse full-stack curriculum for the inspiration 
 
 ## 📝 License <a name="license"></a>
 
-This project is under [MIT](https://github.com/tomdan-ai/Travalers-space-hub/blob/development/LICENSE) licensed.
+This project is under [MIT](https://github.com/Mikey1-nuel/Ruby_Catalog_Group_Capstone/blob/development/LICENSE) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
