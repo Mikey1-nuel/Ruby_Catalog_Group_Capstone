@@ -36,6 +36,7 @@ def save_genres_json
   @genres.each do |genre|
     genre.items.each do |item|
       item_data = {
+        'id' => item.id,
         'genre' => genre.name,
         'type' => item.class.to_s.downcase,
         'publisher' => item.publisher,
