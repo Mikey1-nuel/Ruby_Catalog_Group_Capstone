@@ -38,7 +38,7 @@ def save_labels_json
   labels_arr = []
 
   @labels.each do |label|
-    labels_arr << { 'id' => book.id,,
+    labels_arr << { 'id' => book.id,
                     'title' => label.title,
                     'color' => label.color }
   end
