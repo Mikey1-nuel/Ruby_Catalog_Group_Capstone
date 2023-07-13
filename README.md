@@ -1,7 +1,7 @@
 <a name="readme-top"></a>
 
 <div align="center">
-  <h1><b>Catalog of Things📇</b></h3>
+  <h1><b>Catalog of My Things📇</b></h3>
 </div>
 
 <h2>Ruby Group Capstone Project</h1>
@@ -34,11 +34,12 @@ The Catalog of Things Ruby App is a console-based application that allows users 
 
 ### How to build the "Catalog of Things " App
 
-- 1. Use Ruby.
-- 2. Learn how to apply S.O.L.I.D In OPP.
-- 3. Use Rspec.
-- 4. Use PostgreSQL.
-- 5. Implementation of UML Diagrams
+-  Use Ruby.
+-  Learn how to apply S.O.L.I.D In OPP.
+-  Use Rspec.
+-  Use PostgreSQL.
+-  Implementation of UML Diagrams
+     <img src="catalog_of_my_things.png" />
 
 ## 🛠 Walk through <a name="walk-through"></a>
 
